@@ -118,6 +118,8 @@ fieldset {
 .content__card-link {
   text-decoration: none;
   color: #fff;
+  display: block;
+  cursor: pointer;
 }
 .content__video-card-title {
   font-family: "Oswald", sans-serif;
@@ -181,6 +183,7 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
+  align-items: center;
 }
 .search-form__label {
   display: flex;
@@ -188,7 +191,7 @@ ol {
   gap: 5px;
   align-items: center;
 }
-.search-form__label:hover {
+.search-form__label:hover:has(.search-form__pseudo-checkbox) {
   text-decoration: underline 1px #fff;
 }
 .search-form__textfield:focus {
@@ -219,11 +222,7 @@ ol {
   font-weight: 400;
   font-size: 18;
 }
-.search-form__checkbox-list {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
+
 .search-form__label-text {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
@@ -285,10 +284,6 @@ ol {
 .button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;
-}
-.content__card-link {
-  display: block;
-  cursor: pointer;
 }
 
 .content__card-link_current {
