@@ -21,6 +21,7 @@ fieldset {
   margin: 0;
   padding: 0;
 }
+
 .page {
   display: flex;
   inline-size: 1200px;
@@ -33,6 +34,7 @@ fieldset {
   align-items: center;
   justify-content: center;
 }
+
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
@@ -41,9 +43,11 @@ fieldset {
   gap: 30px;
   inline-size: 1140px;
 }
+
 .result {
   grid-area: result;
 }
+
 .content__details {
   grid-area: details;
   display: flex;
@@ -53,23 +57,27 @@ fieldset {
   block-size: 534px;
   max-inline-size: 399px;
 }
+
 .search-form {
   display: flex;
   gap: 40px;
   justify-content: flex-start;
   align-items: center;
 }
+
 .content__list-container {
   height: 298px;
   overflow-y: auto;
   position: relative;
 }
+
 .result__video-container {
   position: relative;
   width: 711px;
   height: 386px;
   margin-block-end: 16px;
 }
+
 .result__video {
   width: 100%;
   height: 100%;
@@ -81,12 +89,14 @@ fieldset {
   flex-direction: column;
   gap: 30px;
 }
+
 .content__video-card {
   display: flex;
   align-items: flex-start;
   width: 390px;
   height: 103px;
 }
+
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
@@ -98,16 +108,18 @@ fieldset {
   flex-grow: 1;
   max-width: 196px;
 }
+
 .search-form__fieldset-title {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: normal;
 }
+
 .title {
   font-family: "Oswald", sans-serif;
   font-size: 75px;
   font-weight: bold;
-  line-height: 94%;
+  line-height: 0.94;
   text-transform: uppercase;
   padding: 0 0 26px;
 }
@@ -115,17 +127,19 @@ fieldset {
 .content__accent {
   color: rgba(84, 80, 80, 1);
 }
+
 .content__card-link {
   text-decoration: none;
   color: #fff;
   display: block;
   cursor: pointer;
 }
+
 .content__video-card-title {
   font-family: "Oswald", sans-serif;
   font-size: 30px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 1;
   text-transform: uppercase;
   color: currentColor;
   padding-bottom: 5px;
@@ -133,11 +147,12 @@ fieldset {
   overflow: hidden;
   white-space: nowrap;
 }
+
 .content__video-card-description {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 16.2px;
+  line-height: 0.9;
   color: currentColor;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -172,6 +187,7 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
 .search-form__fieldset {
   display: flex;
   flex-direction: column;
@@ -180,23 +196,28 @@ ol {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
 }
+
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
   align-items: center;
 }
+
 .search-form__label {
   display: flex;
   width: fit-content;
   gap: 5px;
   align-items: center;
 }
+
 .search-form__label:hover:has(.search-form__pseudo-checkbox) {
   text-decoration: underline 1px #fff;
 }
+
 .search-form__textfield:focus {
   outline: none;
 }
+
 .search-form__textfield {
   width: 225px;
   height: 27px;
@@ -216,6 +237,7 @@ ol {
   outline: 1px #fff solid;
   outline-offset: 2px;
 }
+
 .search-form__textfield::placeholder {
   color: rgba(255, 255, 255, 0.7);
   font-family: inherit;
@@ -228,16 +250,20 @@ ol {
   font-size: 18px;
   font-weight: 400;
   cursor: pointer;
-  line-height: 21.6px;
+  line-height: 1.2;
 }
+
 .search-form__pseudo-checkbox {
   border: 1px solid #fff;
   width: 19px;
   height: 19px;
   cursor: pointer;
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .search-form__pseudo-checkbox::after {
   background-color: #fff;
   width: 15px;
@@ -245,7 +271,10 @@ ol {
   content: "";
   position: absolute;
   opacity: 0;
+  top: 0;
+  left: 0;
 }
+
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   opacity: 1;
   margin: 1px;
@@ -260,27 +289,32 @@ ol {
   background-color: transparent;
   text-align: center;
   cursor: pointer;
+  height: 34px;
 }
+
 .search-form__submit-button {
   align-self: flex-end;
   width: 194px;
-  height: 34px;
 }
+
 .more-button {
   width: 390px;
-  height: 34px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
+
 .button:focus {
   outline: none;
 }
+
 .button:hover {
   text-decoration: underline 1px #fff;
 }
+
 .button:active {
   background-color: #545050;
   text-decoration: none;
 }
+
 .button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;
@@ -289,15 +323,19 @@ ol {
 .content__card-link_current {
   background-color: #545050;
 }
+
 .content__list-item {
   padding: 0px 3px 0px 3px;
 }
+
 .content__card-link:focus {
   outline: none;
 }
+
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
 }
+
 .content__card-link:hover {
   text-decoration: underline 1px #fff;
 }
